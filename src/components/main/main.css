@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
 
 .main-bg {
     background-image: url('wallpaper1.svg');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size: cover;
     position: relative;
     z-index: 1000;
 }
@@ -15,5 +19,106 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    
+
 }
+
+.main-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: auto;
+}
+
+.main-text {
+    font-size: 45px;
+    color: white;
+    margin-top: 17%;
+    font-weight: 900;
+    margin-right: 40%;
+}
+
+.main-desc-text {
+    font-size: 20px;
+    color: white;
+    margin-right: 52%;
+    width: 450px;
+    margin-left: 75px;
+}
+
+.btn {
+    width: 289px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #0766AD;
+    margin-right: 57%;
+    margin-top: 20px;
+
+}
+
+.btn-text {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.btn-a {
+    text-decoration: none;
+}
+
+.vector {
+    margin-top: 18%;
+}
+
+.achieves-bg {
+    background-image: linear-gradient(rgba(25, 38, 117, 0.8), rgba(25, 38, 117, 0.8)), url('achieves.png');
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1000;
+}
+
+.achieves-menu {
+    align-items: center;
+    display: flex;
+}
+
+.achieves-text {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.achieves-main-text {
+    font-size: 45px;
+    color: white;
+    margin-top: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.achieves-desc-text {
+    font-size: 20px;
+    color: white;
+}
+
+.achieves-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.achieves-card {
+    width: 250px;
+    height: 250px;
+}
+
+.achieves-card img{
+    width: 150px;
+    height: 150px;
+}
+
+
