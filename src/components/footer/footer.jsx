@@ -51,7 +51,7 @@ const Footer = () => {
             <footer className='under__footer'>
                 <div className="container">
                     <div className="under__footer-text">
-                        COPYRIGHT © 2020 Edumy Moodle Theme by Cocoon. All Rights Reserved
+                        COPYRIGHT © 2023 Edumy Moodle Theme by Cocoon. All Rights Reserved
                     </div>
                 </div>
             </footer>
