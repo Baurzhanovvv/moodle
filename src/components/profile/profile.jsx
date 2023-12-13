@@ -76,6 +76,9 @@ export default function Profile() {
                                             <input type="text" placeholder='Renter password' />
                                         </div>
                                     </div>
+                                    <div className="button-update">
+                                        <button className='button-update-text'>Update</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
