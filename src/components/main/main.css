@@ -85,7 +85,7 @@
 .achieves-bg {
     background-image: linear-gradient(rgba(25, 38, 117, 0.8), rgba(25, 38, 117, 0.8)), url('achieves.png');
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -118,7 +118,7 @@
 
 .achieves-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 90px; 
 }
 
@@ -130,11 +130,11 @@
 .achieves-card img{
     width: 100px;
     height: 100px;
-    margin-left: 55px;
+    margin-left: 35px;
 }
 
 .cap-text {
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     font-weight: 500;
     text-align: center;
