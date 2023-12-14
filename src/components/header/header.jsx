@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './header.css';
 import img from './chel.svg';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   const [isDropdownOpen1, setDropdownOpen1] = useState(false);
@@ -19,7 +20,7 @@ export default function Header() {
       <div className="container">
         <div className="header-chart">
           <div className="header-inner">
-            <a href="#!" className="logo">LOGO</a>
+            <NavLink to="/" className="logo">LOGO</NavLink>
             <a href="#!" className="nav__link1"></a>
             <nav className="navbar">
               <div className="nav__link" onMouseEnter={toggleDropdown1} onMouseLeave={toggleDropdown1}>
@@ -47,7 +48,7 @@ export default function Header() {
           </div>
           <div className="header-inner2">
             <nav className='navbar2'>
-              <a id='line-2' href="#!" className='nav__link2'>LOGIN | REGISTER</a>
+              <NavLink id='line-2' to="/login" className='nav__link2'>LOGIN | REGISTER</NavLink>
               <a href="./" className='nav__link2'><img src={img} alt="" /></a>
             </nav>
           </div>
