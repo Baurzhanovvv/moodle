@@ -48,7 +48,7 @@ export default function Header() {
           <div className="header-inner2">
             <nav className='navbar2'>
               <a id='line-2' href="#!" className='nav__link2'>LOGIN | REGISTER</a>
-              <a href="#!" className='nav__link2'><img src={img} alt="" /></a>
+              <a href="./" className='nav__link2'><img src={img} alt="" /></a>
             </nav>
           </div>
         </div>

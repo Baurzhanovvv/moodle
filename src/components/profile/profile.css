@@ -186,6 +186,7 @@ input::placeholder {
     display: inline-block;
     margin-left: 50px;
     margin-top: 20px;
+    text-align: center;
 }
 
 .button-update-text {
@@ -194,4 +195,5 @@ input::placeholder {
     font-weight: 400;
     border: none;
     background-color: inherit;
+    margin-top: 5px;
 }
