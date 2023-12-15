@@ -1,10 +1,10 @@
 import { connect } from "react-redux"
 import Login from "./login"
-import { registerUserTC } from "../../store/reducers/authReducers"
+import { loginStudentTC } from "../../store/reducers/authReducers"
 
 const LoginContainer = props => {
     return (
-        <Login register={props.registerUserTC}/>
+        <Login login={props.loginStudentTC}/>
     )
 }
 
@@ -12,4 +12,4 @@ let mapStateToProps = state => ({
     auth: state.auth
 })
 
-export const LoginConnected = connect(mapStateToProps, {registerUserTC})(LoginContainer)
+export const LoginConnected = connect(mapStateToProps, {loginStudentTC})(LoginContainer)

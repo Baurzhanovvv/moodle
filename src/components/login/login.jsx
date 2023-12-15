@@ -6,20 +6,21 @@ import * as Yup from 'yup'
 import { Formik, Form, Field } from 'formik'
 
 export default function Login(props) {
+    console.log(props);
     const initialValues = {
         username: '',
-        email: '',
         password: '',
-    }
+    };
+
     const validationSchema = Yup.object({
-        username: '',
-        email: '',
-        password: Yup.string().required('Invalid password'),
-    })
-    
+        username: Yup.string().required('Username is required'),
+        password: Yup.string().required('Password is required'),
+    });
+
     const onSubmit = values => {
-        props.register(values)
-    }
+        props.login(values)
+        console.log(values);
+    };
 
     return (
         <div className="login">
@@ -31,14 +32,6 @@ export default function Login(props) {
                         {
                 formik => {
                     return <Form>
-                        <div className="input-card">
-                            <div className="avatar-login">
-                                <img src={avatar} alt="" />
-                            </div>
-                            <div className="input-login">
-                                <Field component='input' name="email" type="text" placeholder="email@email.com" />
-                            </div>
-                        </div>
                         <div className="input-card">
                             <div className="avatar-login">
                                 <img src={avatar} alt="" />

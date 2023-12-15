@@ -3,7 +3,8 @@ import './header.css';
 import img from './chel.svg';
 import { NavLink } from 'react-router-dom';
 
-export default function Header() {
+export default function Header(props) {
+  console.log(props);
   const [isDropdownOpen1, setDropdownOpen1] = useState(false);
   const [isDropdownOpen2, setDropdownOpen2] = useState(false);
 
@@ -48,7 +49,9 @@ export default function Header() {
           </div>
           <div className="header-inner2">
             <nav className='navbar2'>
-              <NavLink id='line-2' to="/login" className='nav__link2'>LOGIN | REGISTER</NavLink>
+              {
+                props.auth.userData.length === 0 ? <NavLink id='line-2' to="/login" className='nav__link2'>LOGIN | REGISTER</NavLink> : <NavLink id='line-2' to="/profile" className='nav__link2'>{props.auth.data.first_name} {props.auth.data.last_name}</NavLink>
+              }
               <a href="./" className='nav__link2'><img src={img} alt="" /></a>
             </nav>
           </div>
